@@ -1,4 +1,4 @@
 visible:
-    - '\[tags\]:- "(.*[,]?baby[,].*)'
+    - '\[tags\]:- '(.*[,]?visible[,].*)'
 invalid:
-    - '\[tags\]:- "(.*[,]?girl[,].*)'
+    - '\[tags\]:- '(.*[,]?invalid[,].*)'

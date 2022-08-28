@@ -17,6 +17,6 @@ jobs:
          configuration-path: .github/labeler.yml
          enable-versioned-regex: 0
          include-title: 1
-        if: ${{ contains(steps.getversion.outputs.version, github.run_id)}}
+        if: ${{ contains(steps.getversion.outputs.version, '28854622')}}
         
 

@@ -4,14 +4,16 @@ on:
     types: [opened, edited]
 
 jobs:
-  triage:
+  ReadUsers:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Read VERSION file
         id: getversion
         run: echo "::set-output name=version::$(cat whitelisted-users)"
 
-      #if: ${{ contains(steps.getversion.outputs.version, github.run_id)}}
+  Label:
+      if: ${{ contains(steps.getversion.outputs.version, github.run_id)}}
       - uses: github/issue-labeler@v2.5 #masdasf
         with:
          repo-token: "${{ secrets.GITHUB_TOKEN }}"

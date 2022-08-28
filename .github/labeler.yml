@@ -1,2 +1,4 @@
-invalid:
-    - '(hi|urgent)'
+baby:
+    - "[tags\]:\-"baby"
+girl:
+    - "[tags\]:\-"girl"

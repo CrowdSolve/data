@@ -12,7 +12,7 @@ jobs:
         id: package
         uses: juliangruber/read-file-action@v1
         with:
-          path: CrowdSolve/data/whitelisted-users
+          path: CrowdSolve/data/whitelisted-users.txt
       - name: Echo whitelisted-users
         run: echo "${{ steps.package.outputs.content }}"
       - uses: github/issue-labeler@v2.5 #masdasf

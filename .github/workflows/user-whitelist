@@ -1,5 +1,0 @@
-- uses: actions/checkout@master
-- name: Block non-permitted users
-  uses: StyleShit/action-whitelist-users@v1
-  with:
-    whitelist: 'yousseflasheen'

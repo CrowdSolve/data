@@ -1,4 +1,4 @@
 visible:
-    - '\[tags\]:- '(.*[,]?visible[,].*)'
+    - '\[tags\]:- "(.*[,]?visible[,].*)'
 invalid:
-    - '\[tags\]:- '(.*[,]?invalid[,].*)'
+    - '\[tags\]:- "(.*[,]?invalid[,].*)'

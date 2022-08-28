@@ -12,8 +12,8 @@ jobs:
         id: package
         uses: juliangruber/read-file-action@v1
         with:
-          path: ./package.json
-      - name: Echo package.json
+          path: ./whitelisted-users
+      - name: Echo whitelisted-users
         run: echo "${{ steps.package.outputs.content }}"
       - uses: github/issue-labeler@v2.5 #masdasf
         with:

@@ -11,7 +11,7 @@ jobs:
         id: getversion
         run: echo "::set-output name=version::$(cat whitelisted-users)"
 
-      if: ${{ contains(steps.getversion.outputs.version, github.run_id)}}
+      #if: ${{ contains(steps.getversion.outputs.version, github.run_id)}}
       - uses: github/issue-labeler@v2.5 #masdasf
         with:
          repo-token: "${{ secrets.GITHUB_TOKEN }}"

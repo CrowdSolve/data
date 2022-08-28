@@ -8,15 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Read VERSION file
-        id: getversion
-        run: echo "::set-output name=version::$(cat ./whitelisted-users)"
-      - uses: github/issue-labeler@v2.5 #masdasf
+      - name: Read whitelisted-users file
+        id: get-whitelisted-users
+        run: echo "::set-output name=whitelisted-users::$(cat ./whitelisted-users)"
+      - uses: github/issue-labeler@v2.5
         with:
          repo-token: "${{ secrets.GITHUB_TOKEN }}"
          configuration-path: .github/labeler.yml
          enable-versioned-regex: 0
          include-title: 1
-        if: ${{ contains(steps.getversion.outputs.version, '28854622')}}
+        if: ${{ contains(steps.get-whitelisted-users.outputs.whitelisted-users, github.actor)}}
         
 

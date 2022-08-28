@@ -5,16 +5,13 @@ on:
 
 jobs:
   triage:
-    if: ${{ github.actor == 'yousseflasheen' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Read package.json
-        id: package
-        uses: juliangruber/read-file-action@v1
-        with:
-          path: CrowdSolve/data/whitelisted-users.txt
-      - name: Echo whitelisted-users
-        run: echo "${{ steps.package.outputs.content }}"
+      - name: Read VERSION file
+        id: getversion
+        run: echo "::set-output name=version::$(cat whitelisted-users)"
+
+      if: ${{ contains(steps.getversion.outputs.version, github.run_id)}}
       - uses: github/issue-labeler@v2.5 #masdasf
         with:
          repo-token: "${{ secrets.GITHUB_TOKEN }}"

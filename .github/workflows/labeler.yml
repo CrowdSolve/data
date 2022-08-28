@@ -5,6 +5,7 @@ on:
 
 jobs:
   triage:
+    if: ${{ github.actor == 'yousseflasheen' }}
     runs-on: ubuntu-latest
     steps:
     - uses: github/issue-labeler@v2.5 #masdasf
@@ -13,4 +14,3 @@ jobs:
         configuration-path: .github/labeler.yml
         enable-versioned-regex: 0
         include-title: 1
-        body-missing-regex-label: 'broken-template'

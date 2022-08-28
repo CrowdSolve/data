@@ -8,9 +8,17 @@ jobs:
     if: ${{ github.actor == 'yousseflasheen' }}
     runs-on: ubuntu-latest
     steps:
-    - uses: github/issue-labeler@v2.5 #masdasf
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        configuration-path: .github/labeler.yml
-        enable-versioned-regex: 0
-        include-title: 1
+      - name: Read package.json
+        id: package
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: ./package.json
+      - name: Echo package.json
+        run: echo "${{ steps.package.outputs.content }}"
+      - uses: github/issue-labeler@v2.5 #masdasf
+        with:
+         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+         configuration-path: .github/labeler.yml
+         enable-versioned-regex: 0
+         include-title: 1
+  

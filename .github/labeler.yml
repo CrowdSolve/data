@@ -1,4 +1,4 @@
 baby:
-    - "[tags\]:\-"baby"
+    - "\[tags\]:-"(.*[,]?baby[,].*)"
 girl:
-    - "[tags\]:\-"girl"
+    - "\[tags\]:-"(.*[,]?girl[,].*)"

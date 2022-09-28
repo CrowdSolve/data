@@ -17,6 +17,6 @@ jobs:
          configuration-path: .github/labeler.yml
          enable-versioned-regex: 0
          include-title: 1
-        if: ${{ contains(steps.get-whitelisted-users.outputs.whitelisted-users, github.actor)}}
+        #if: ${{ contains(steps.get-whitelisted-users.outputs.whitelisted-users, github.actor)}}
         
 

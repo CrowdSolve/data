@@ -1,16 +1,26 @@
 'I-ASU-23 : C-Calculus1':
     - '\[tags\]:- "(.*[,]?I-ASU-23 : C-Calculus1[,].*)'
-S-Calculus:
+'I-ASU-23 : C-Calculus2':
+    - '\[tags\]:- "(.*[,]?I-ASU-23 : C-Calculus2[,].*)'
+'I-SHA-23 : C-Calculus1':
+    - '\[tags\]:- "(.*[,]?I-SHA-23 : C-Calculus1[,].*)'
+'I-SHA-23 : C-Calculus2':
+    - '\[tags\]:- "(.*[,]?I-SHA-23 : C-Calculus2[,].*)'
+'I-SHA-23 : C-Calculus3':
+    - '\[tags\]:- "(.*[,]?I-SHA-23 : C-Calculus3[,].*)'
+'I-SHA-23 : C-Physics2':
+    - '\[tags\]:- "(.*[,]?I-SHA-23 : C-Physics2[,].*)'
+'S-Calculus':
     - '\[tags\]:- "(.*[,]?S-Calculus[,].*)'
-S-Chemistry:
+'S-Chemistry':
     - '\[tags\]:- "(.*[,]?S-Chemistry[,].*)'
-S-Engineering Drawing:
+'S-Engineering Drawing':
     - '\[tags\]:- "(.*[,]?S-Engineering Drawing[,].*)'
-S-History:
+'S-History':
     - '\[tags\]:- "(.*[,]?S-History[,].*)'
-S-Mechanics:
+'S-Mechanics':
     - '\[tags\]:- "(.*[,]?S-Mechanics[,].*)'
-S-Physics:
+'S-Physics':
     - '\[tags\]:- "(.*[,]?S-Physics[,].*)'
-S-Technical English:
+'S-Technical English':
     - '\[tags\]:- "(.*[,]?S-Technical English[,].*)'
